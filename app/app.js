@@ -1,4 +1,4 @@
 angular.module('myApp', [
-  'ngRoute',
-  'myApp.sumTest',
-])
+    'ngRoute',
+    'myApp.sum',
+]);
