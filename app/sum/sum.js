@@ -15,7 +15,7 @@ angular
                 data => {
                     $scope.summa = data.data.sum;
                 },
-                error => console.error(error.data.error)
+                error => alert(error.data.error)
             );
         };
     });
