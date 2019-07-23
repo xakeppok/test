@@ -13,7 +13,7 @@ angular
             const dataSum = $scope.data;
             $http.post('http://localhost:3012/numbers/', dataSum).then(
                 data => {
-                    $scope.sum = data.data.sum;
+                    $scope.sumOfNumbers = data.data.sum;
                 },
                 error => alert(error.data.error)
             );
