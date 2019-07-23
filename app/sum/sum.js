@@ -10,10 +10,10 @@ angular
         $scope.str = 'demo';
         $scope.sum = () => {
             $scope.data = { first: $scope.first, second: $scope.second };
-            let dataSum = $scope.data;
+            const dataSum = $scope.data;
             $http.post('http://localhost:3012/numbers/', dataSum).then(
                 data => {
-                    $scope.summa = data.data.sum;
+                    $scope.sum = data.data.sum;
                 },
                 error => alert(error.data.error)
             );
